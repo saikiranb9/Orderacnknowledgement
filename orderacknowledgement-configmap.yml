@@ -1,0 +1,40 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: orderacknowledgement-configmap
+  namespace: edi-platform
+data:
+  #Environment-agnostic configs
+  apigateway.url: http://apigateway:9090  
+  ediAnalyticsDataUrl: http://apigateway:9093/edianalyticsdata/
+  ediAnalyticsDataFindByTraceIdAndTypeUrl: http://apigateway:9093/edianalyticsdata/traceid/{traceId}/type/{type}
+  ediconfigUrl: http://apigateway:9093/ediconfig/customer/{senderCode}/{receiverCode}
+  vendorRelationshipUrl: http://apigateway:9093/vendorrelationship/suppliersinfo/{vendorName}
+  kafka.security.protocol: SSL
+  kafka.max.request.size: "8728640"
+  jaeger.collector.url: "http://zipkin.monitoring.svc:9411"
+  #Develop
+  dev.kafka.topic.inbound: DORDERACK
+  dev.kafka.topic.outbound: DEDIMAPPER
+  dev.kafka.analytic.topic: DEDIAPIGATEWAYANALYTICS
+  dev.kafka.topic.csv: DMSA855CSVACK
+  dev.kafka.topic.xml: DMSA855XMLACK
+  dev.host.name: r-qa-msa.gcp.atd-us.com
+  dev.kafka.bootstrap.server.url: kafka-dev-2.gcp.atd-us.icd:31090
+  #QA
+  qa.kafka.topic.inbound: ORDERACK
+  qa.kafka.topic.outbound: EDIMAPPER
+  qa.kafka.analytic.topic: EDIAPIGATEWAYANALYTICS
+  qa.kafka.topic.csv: MSA855CSVACK
+  qa.kafka.topic.xml: MSA855XMLACK
+  qa.host.name: p-xat-msa.gcp.atd-us.com
+  qa.kafka.bootstrap.server.url: kafka-xat-2.gcp.atd-us.icd:31090
+  #Production
+  prod.kafka.topic.inbound: ORDERACK
+  prod.kafka.topic.outbound: EDIMAPPER
+  prod.kafka.analytic.topic: EDIAPIGATEWAYANALYTICS
+  prod.kafka.topic.csv: MSA855CSVACK
+  prod.kafka.topic.xml: MSA855XMLACK
+  prod.host.name: prod-msa.gcp.atd-us.com
+  prod.kafka.bootstrap.server.url: kafka-prod-msa-int-2.gcp.atd-us.icd:31090
+

@@ -1,0 +1,100 @@
+{
+	"metadata": {
+		"traceId": "6331ad6e5b58899044ba9616eab0c9c5",
+		"senderCode": "01-007914401",
+		"receiverCode" : "12-7047353003"
+	},
+	"data": {
+		"primaryDCID": 1698,
+		"origsysdocumentref": "EDI-1664200050065-FY8QH",
+		"locationNumber": "91014",
+		"customerPO": "D3808612",
+		"count": 12,
+		"products": [
+			{
+				"id": "93024",
+				"totalReqQty": 2,
+				"filledQty": 2,
+				"killedQty": 0,
+				"vendorName": "HERCULES TIRE \u0026 RUBBER COMPANY"
+			},
+			{
+				"id": "03508000000",
+				"totalReqQty": 2,
+				"filledQty": 0,
+				"killedQty": 2,
+				"vendorName": null
+			},
+			{
+				"id": "04603430000",
+				"totalReqQty": 4,
+				"filledQty": 0,
+				"killedQty": 4,
+				"vendorName": null
+			},
+			{
+				"id": "04733290000",
+				"totalReqQty": 2,
+				"filledQty": 0,
+				"killedQty": 2,
+				"vendorName": null
+			},
+			{
+				"id": "2632100",
+				"totalReqQty": 1,
+				"filledQty": 0,
+				"killedQty": 1,
+				"vendorName": null
+			},
+			{
+				"id": "2640200",
+				"totalReqQty": 3,
+				"filledQty": 0,
+				"killedQty": 3,
+				"vendorName": null
+			},
+			{
+				"id": "2908200",
+				"totalReqQty": 1,
+				"filledQty": 0,
+				"killedQty": 1,
+				"vendorName": null
+			},
+			{
+				"id": "93014",
+				"totalReqQty": 1,
+				"filledQty": 0,
+				"killedQty": 1,
+				"vendorName": null
+			},
+			{
+				"id": "93019",
+				"totalReqQty": 3,
+				"filledQty": 0,
+				"killedQty": 3,
+				"vendorName": null
+			},
+			{
+				"id": "93022",
+				"totalReqQty": 3,
+				"filledQty": 0,
+				"killedQty": 3,
+				"vendorName": null
+			},
+			{
+				"id": "93682",
+				"totalReqQty": 4,
+				"filledQty": 0,
+				"killedQty": 4,
+				"vendorName": null
+			},
+			{
+				"id": "96596",
+				"totalReqQty": 3,
+				"filledQty": 0,
+				"killedQty": 3,
+				"vendorName": null
+			}
+		]
+	}
+}
